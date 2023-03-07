@@ -1,0 +1,255 @@
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+                                          
+    
+}
+
+
+body{
+    
+    width: auto;
+    /* background-color: #85dcb8; */
+    background-color: #1cd0af;
+    
+    
+   
+                                                
+}
+
+
+
+.bg{
+    position: relative;
+    display: flex;
+    
+    margin-top: -550px;
+
+}
+
+.bubbles{
+    position: relative;
+    display: flex;
+    
+
+}
+
+.bubbles span{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    background: #116466;
+    margin: 0 10px;
+    border-radius: 50px;
+    box-shadow: 0 0 0 10px #1aa1b2 ,
+    0 0 50px  #116466,
+    0 0  100px   #116466;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(155s / var(--i));
+
+}
+
+.bubbles span:nth-child(even)
+{
+    background: #CAFAFE;
+    box-shadow: 0 0 0 10px #1f2833 ,
+    0 0  50px #CAFAFE,
+    0 0  100px #CAFAFE;
+}
+
+@keyframes animate{
+    0%
+    {
+        transform: translateY(93vh) scale(0);
+    }
+    100%
+    {
+        transform: translateY(-10vh) scale(1);
+    }
+}
+
+
+#search-form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    position: relative;
+    
+
+                                                
+                                                
+}
+
+#search-form  i{
+font-size: 20px;
+color: rgb(8, 8, 8);
+}
+
+
+
+
+
+#temp
+{
+    
+   text-align: center;
+}
+
+#temp #temp-unit
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    color:#00fece ;
+}
+
+#temp #temp-value
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    color:#00fece ;
+}
+
+#climate
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.5rem;
+    color:#00fece ;
+    text-align: center;
+    font-family: 'Jersey M54', sans-serif;
+    
+    
+                                              
+}
+
+#location
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.5rem;
+    color:#00fece ;
+    text-align: center;
+    font-family: 'Jersey M54', sans-serif;
+                                                    
+}
+
+
+#temp-icon
+{
+ margin: 1rem;
+ width: 40%;
+ height: auto;
+}
+
+main
+{
+ padding: 20px;
+ margin-top: 40px;
+ margin-left: auto;
+ margin-right: auto;
+ background-color:#002037 ;
+ border-radius: 20px;
+ 
+                                                
+
+ width: 445px;
+
+ height: 445px;
+ display: block;
+ opacity: .6;
+
+}
+
+#search-button
+{
+    color:#1cd0af;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 10px; 
+    margin-left: 5px;
+    padding:10px 10px;
+    border: 2px solid #002037;
+    display: inline-block;
+    transition: all 0.4 ease 1s;
+    font-family: 'Caribantu', sans-serif;
+                                                
+
+}
+
+#search-button:hover
+{
+    color: aliceblue;
+    background: #1aa1b2;
+    border-color: #127886;
+    transition: all 0.4 ease 1s;
+}
+
+
+/* enter city name */
+
+#search-input
+{
+    width: 300px;
+    overflow: hidden;
+    font-size: 18px;
+    margin: 4px 0;
+    padding: 8px 0;
+    font-family: 'Caribantu', sans-serif;
+                                                
+    border-bottom: 3px solid #127886;
+    color: #123f4c;
+    outline: none;
+    background: none; 
+   
+}
+
+
+
+input
+{
+   border: none;
+    
+}
+
+
+.fa{
+    /* width: 5rem;
+    height: 5rem; */
+    display: flex;
+    padding: 10px;
+    position: relative;
+    top: calc(50%);
+    right: 2.35rem;
+}
+
+
+
+@media screen and (max-width:600px) 
+{
+    
+
+
+
+    main
+    {
+        padding: 20px;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color:#002037 ;
+        border-radius: 20px;
+    
+        width: 100%;
+    
+        height: 50px;
+        display: block;
+        opacity: .6;
+    
+    }
+
+}
